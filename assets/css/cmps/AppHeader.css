@@ -1,0 +1,73 @@
+.app-header {
+    background-color: rgba(255, 145, 0, 0.555);
+    color: whitesmoke;
+}
+
+.app-header h1 {
+    font-size: 2em;
+}
+
+.app-header nav {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.app-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    margin-right: 10%;
+    flex-grow: 9
+}
+
+.app-header nav li {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid;
+    font-size: larger;
+    height: 100px;
+}
+
+.app-header nav li:first-child {
+    border-left: 1px solid;
+}
+
+nav .active, nav .my-active {
+    color: chocolate;
+    text-decoration: underline;
+}
+
+.center {
+    flex-grow: 10;
+    /* text-align: center; */
+    margin-left: 10%;
+}
+
+@media (max-width: 760px) {
+    .app-header nav {
+        flex-direction: column;
+        height: auto;
+        justify-content: start;
+    }
+    .app-header nav ul {
+        flex-direction: column;
+        flex-grow: 1;
+    margin-right: 0%;
+
+    }
+    .app-header nav li {
+        width: 100vw;
+        height: auto;
+    border-top: 1px solid;
+
+    }
+}
